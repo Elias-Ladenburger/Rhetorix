@@ -22,11 +22,12 @@ export default function TabLayout() {
       screenOptions={{
         tabBarActiveTintColor: Colors[colorScheme ?? 'light'].tint,
       }}>
+
       <Tabs.Screen
         name="index"
         options={{
-          title: 'Tab One',
-          tabBarIcon: ({ color }) => <TabBarIcon name="code" color={color} />,
+          title: 'Menu',
+          // tabBarIcon: ({ color }) => <TabBarIcon name="empire" color={color} />,
           headerRight: () => (
             <Link href="/modal" asChild>
               <Pressable>
@@ -43,10 +44,11 @@ export default function TabLayout() {
           ),
         }}
       />
+
       <Tabs.Screen
-        name="two"
+        name="practice"
         options={{
-          title: 'Tab Two',
+          title: 'Practice',
           tabBarIcon: ({ color }) => <TabBarIcon name="code" color={color} />,
         }}
       />
