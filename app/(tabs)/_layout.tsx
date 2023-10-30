@@ -27,7 +27,7 @@ export default function TabLayout() {
         name="index"
         options={{
           title: 'Menu',
-          // tabBarIcon: ({ color }) => <TabBarIcon name="empire" color={color} />,
+          tabBarIcon: ({ color }) => <TabBarIcon name="list" color={color} />,
           headerRight: () => (
             <Link href="/modal" asChild>
               <Pressable>
@@ -46,10 +46,25 @@ export default function TabLayout() {
       />
 
       <Tabs.Screen
-        name="practice"
+        name="fragen"
         options={{
-          title: 'Practice',
-          tabBarIcon: ({ color }) => <TabBarIcon name="code" color={color} />,
+          title: 'Fragen',
+          tabBarIcon: ({ color }) => <TabBarIcon name="question-circle-o" color={color} />,
+        }}
+      />
+
+      <Tabs.Screen
+        name="rangliste"
+        options={{
+          title: 'Bestenliste',
+          tabBarIcon: ({ color }) => <TabBarIcon name="rocket" color={color} />,
+        }}
+      />
+      <Tabs.Screen
+        name="settings"
+        options={{
+          title: 'Einstellungen',
+          tabBarIcon: ({ color }) => <TabBarIcon name="gear" color={color} />,
         }}
       />
     </Tabs>

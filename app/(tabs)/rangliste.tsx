@@ -1,12 +1,14 @@
 import { StyleSheet } from 'react-native';
 
+import RhetoricsQuiz from '../../components/RhetoricsQuiz';
 import { Text, View } from '../../components/Themed';
 
-export default function TabOneScreen() {
+export default function TabTwoScreen() {
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Willkommen!</Text>
+      <Text style={styles.title}>Stelle deine Frage</Text>
       <View style={styles.separator} lightColor="#eee" darkColor="rgba(255,255,255,0.1)" />
+      <RhetoricsQuiz></RhetoricsQuiz>
     </View>
   );
 }
@@ -18,7 +20,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   title: {
-    fontSize: 24,
+    fontSize: 20,
     fontWeight: 'bold',
   },
   separator: {
